@@ -1,0 +1,82 @@
+@import '../../themes/default.scss';
+
+.section__one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  padding-top: 150px;
+
+  .title__wrapper {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    border-radius: 100%;
+
+    .title {
+      color: $white;
+      font-family: $Sign;
+      font-size: 35px;
+      text-align: center;
+      font-weight: 500
+      ;
+    }
+
+  }
+  
+  .section__one--descr {
+    font-family: $Normal;
+  }
+
+  .social__bar--wrapper {
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+
+    .social__bar--icon {
+      font-size: 25px;
+      margin: 0 10px;
+    }
+  }
+}
+
+.section__two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $orange;
+  margin-top: -1px;
+
+  .section__two--title {
+    font-family: $Normal;
+    color: $white;
+    text-align: left;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px $white;
+  }
+  
+  .section__two--descr {
+    max-width: 300px;
+    font-family: $Normal;
+    color: $white;
+    font-size: 17px;
+    text-align: left;
+    margin-bottom: 100px;
+  }
+
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: $orange;
+  font-family: $Normal;
+  font-size: .8em;
+  color: $white;
+}

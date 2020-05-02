@@ -1,0 +1,11 @@
+.layout__main--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+.layout__main--wrapper .layout__content--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

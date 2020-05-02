@@ -1,0 +1,59 @@
+@import '../../themes/default.scss';
+
+.navmenu__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 15;
+  background-color: transparentize($color: $white, $amount: .2);;
+  .navmenu__icon--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    .navmenu__icon {
+      font-size: 30px;
+    }
+  }
+
+  .navmenu__name {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    line-height: 50px;
+    font-family: $Sign;
+  }
+
+  .navmenu__menu--wrapper {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparentize($color: $white, $amount: .2);
+    .navmenu__link--list {
+      display: flex;
+      flex-direction: column;
+      .navmenu__link--wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+        .navmenu__link {
+          text-decoration: none;
+          color: $black;
+          font-size: 25px;
+          font-family: $Normal;
+          border-bottom: solid 1px $orange;
+        }
+      }
+    }
+  }
+}
